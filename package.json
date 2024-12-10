@@ -1,0 +1,39 @@
+{
+  "name": "genzdevs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"npm run watch-twind\" ",
+    "build": "vite build",
+    "preview": "vite preview",
+    "watch-twind": "postcss ./src/tailwind.css -o ./src/index.css -w"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-moving-text": "^0.0.7",
+    "react-router-dom": "^7.0.1",
+    "react-type-animation": "^3.2.0",
+    "swiper": "^11.1.15",
+    "tailwindcss": "^3.4.15",
+    "tailwindcss-cli": "^0.1.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.12.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.15.0",
+    "vite": "^6.0.1"
+  }
+}

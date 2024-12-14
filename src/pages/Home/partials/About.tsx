@@ -5,11 +5,11 @@ import { HomeImages } from "../../../utils/images";
 
 const About = () => {
   return (
-    <Layout className=" flex items-center" id="about">
-      <div className="basis-1/2 pr-24">
-        <h1 className="text-3xl">
+    <Layout className="flex flex-wrap items-center" id="about">
+      <div className="basis-full md:basis-1/2 md:pr-24">
+        <h1 className="text-xl md:text-3xl">
           With{" "}
-          <span className="text-6xl text-brand tracking-wide italic">
+          <span className="text-2xl md:text-6xl text-brand tracking-wide italic">
             genZdevs
           </span>{" "}
           <br /> Become the Next
@@ -28,7 +28,7 @@ const About = () => {
               1000,
             ]}
             speed={50}
-            style={{ fontSize: "3em" }}
+            className="text-4xl md:text-5xl"
             repeat={Infinity}
           />
         </div>
@@ -48,7 +48,7 @@ const About = () => {
           </button>
         </a>
       </div>
-      <div className="basis-1/2 rounded-lg overflow-clip">
+      <div className="basis-full md:basis-1/2 rounded-lg overflow-clip my-10 md:my-0">
         <img src={HomeImages.ABOUT} alt="about genZdevs" />
       </div>
     </Layout>

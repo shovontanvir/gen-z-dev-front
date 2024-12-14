@@ -5,7 +5,7 @@ import AchievementItem from "./AchievementItem";
 const Achievements = () => {
   return (
     <Layout
-      className="flex justify-between items-center pt-0"
+      className="flex flex-wrap justify-between items-center pt-0"
       id="achievements"
     >
       {achievementLists.map((achievement) => (

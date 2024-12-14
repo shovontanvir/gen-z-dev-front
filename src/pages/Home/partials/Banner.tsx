@@ -29,7 +29,7 @@ const Banner = () => {
           },
         }}
         modules={[EffectCreative, Autoplay]}
-        className="mySwiper h-[70vh] bg-black"
+        className="mySwiper h-[30vh] md:h-[70vh] bg-black"
         autoplay={{
           delay: 2500,
         }}

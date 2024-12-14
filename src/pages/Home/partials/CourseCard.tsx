@@ -2,7 +2,7 @@ import { Coourse } from "../../../types/Course";
 
 const CourseCard = ({ course }: { course: Coourse.CourseItem }) => {
   return (
-    <div className="basis-1/3 px-8 my-5 cursor-pointer">
+    <div className="basis-full md:basis-1/3 md:px-8 my-5 cursor-pointer">
       <div className="overflow-clip bg-white group">
         <img src={course.image} alt={course.courseName} />
         <div className="p-5 group-hover:bg-brand group-hover:bg-opacity-80 transition-all duration-300">

@@ -21,4 +21,8 @@
   .nav-items {
     @apply px-5 py-2 hover:tracking-widest transition-all duration-500 cursor-pointer font-kalam;
   }
+
+  .burger-menu {
+    @apply border border-white my-1 transition-all duration-300;
+  }
 }

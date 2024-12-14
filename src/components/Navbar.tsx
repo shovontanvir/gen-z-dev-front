@@ -16,8 +16,8 @@ const Navbar = () => {
   return (
     <nav
       className={`w-screen h-16 md:h-20 flex justify-between items-center z-50 fixed top-0 px-5 md:px-28 py-5 ${
-        navBg ? "bg-white" : ""
-      } bg-brand md:bg-none transition-all duration-500 relative`}
+        navBg && "bg-white"
+      } bg-brand md:bg-transparent transition-all duration-500`}
     >
       {/* logo in the navbar */}
       <div className="basis-1/2 md:basis-1/4">
@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
 
       {/* navbar menu list for large screens, hidden in small screens */}
-      <div className="basis-3/4 hidden md:visible">
+      <div className="basis-3/4 hidden md:block">
         <ul className="flex justify-between items-center">
           {menuItems.map((item) => (
             <li
@@ -48,21 +48,23 @@ const Navbar = () => {
       </div>
 
       {/* burger menu for small devices, hidden in large screens */}
-      <div className="basis-1/2 flex justify-end items-center">
+      <div className="basis-1/2 flex justify-end items-center md:hidden">
         <div
           className="w-8"
           onClick={() => setIsMobileMenuOpen((prevState) => !prevState)}
         >
           <div
-            className={`w-2/3 burger-menu ${
+            className={`w-2/3 burger-menu ${navBg && "border-brand"} ${
               isMobileMenuOpen && "w-full -rotate-[135deg]"
             }`}
           ></div>
           <div
-            className={`w-full burger-menu ${isMobileMenuOpen && "hidden"}`}
+            className={`w-full burger-menu ${navBg && "border-brand"} ${
+              isMobileMenuOpen && "hidden"
+            }`}
           ></div>
           <div
-            className={`w-2/3 burger-menu ${
+            className={`w-2/3 burger-menu ${navBg && "border-brand"} ${
               isMobileMenuOpen && "w-full rotate-[135deg]"
             }`}
           ></div>

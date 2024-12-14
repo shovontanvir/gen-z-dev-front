@@ -639,6 +639,9 @@ body{
 .h-screen{
   height: 100vh;
 }
+.h-\[40vh\]{
+  height: 40vh;
+}
 .w-2\/3{
   width: 66.666667%;
 }
@@ -747,6 +750,10 @@ body{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.\!bg-brand{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(46 92 119 / var(--tw-bg-opacity, 1)) !important;
 }
 .bg-opacity-10{
   --tw-bg-opacity: 0.1;
@@ -988,6 +995,14 @@ body{
     margin-bottom: 0px;
   }
 
+  .md\:block{
+    display: block;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
   .md\:h-20{
     height: 5rem;
   }
@@ -1018,6 +1033,10 @@ body{
 
   .md\:flex-nowrap{
     flex-wrap: nowrap;
+  }
+
+  .md\:bg-transparent{
+    background-color: transparent;
   }
 
   .md\:bg-none{

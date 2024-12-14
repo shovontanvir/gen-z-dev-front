@@ -1,7 +1,11 @@
 const BannerItem = ({ image }: { image: string }) => {
   return (
     <div className="relative w-full h-full flex items-end px-10 md:px-28">
-      <img src={image} alt="home banner" className="absolute inset-0" />
+      <img
+        src={image}
+        alt="home banner"
+        className="absolute inset-0 w-full h-full"
+      />
       <div className="relative text-white z-50 w-[50vw] h-[30vh] md:h-[50vh] flex items-center">
         <div>
           <h1 className="text-xl md:text-6xl tracking-wider font-kalam">

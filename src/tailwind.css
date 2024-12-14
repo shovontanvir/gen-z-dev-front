@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playwrite+NG+Modern:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,17 @@
   html {
     scroll-behavior: smooth;
   }
+
   body {
-    @apply font-playWrite;
+    @apply font-roboto;
+  }
+}
+
+@layer utilities {
+}
+
+@layer components {
+  .nav-items {
+    @apply px-5 py-2 hover:tracking-widest transition-all duration-500 cursor-pointer font-kalam;
   }
 }

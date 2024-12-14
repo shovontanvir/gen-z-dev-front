@@ -7,8 +7,8 @@ export default {
         brand: "#2E5C77",
       },
       fontFamily: {
-        eduVic: ["Edu AU VIC WA NT Arrows", "cursive"],
-        playWrite: ["Playwrite NG Modern", "serif"],
+        kalam: ["Kalam", "serif"],
+        roboto: ["Roboto Condensed", "sans-serif"],
       },
     },
   },

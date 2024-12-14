@@ -2,14 +2,10 @@ import { Coourse } from "../../../types/Course";
 
 const CourseCard = ({ course }: { course: Coourse.CourseItem }) => {
   return (
-    <div className="basis-1/4 p-2 group cursor-pointer">
-      <div className="border border-brand rounded-lg overflow-clip bg-white">
-        <img
-          src={course.image}
-          alt={course.courseName}
-          className="rounded-t-lg"
-        />
-        <div className="p-5 group-hover:bg-brand group-hover:bg-opacity-80 transition-all duration-500">
+    <div className="basis-1/3 px-8 my-5 cursor-pointer">
+      <div className="overflow-clip bg-white group">
+        <img src={course.image} alt={course.courseName} />
+        <div className="p-5 group-hover:bg-brand group-hover:bg-opacity-80 transition-all duration-300">
           <h1 className="text-xl text-brand font-semibold tracking-wider mb-3 leading-8 group-hover:text-white">
             {course.courseName}
           </h1>

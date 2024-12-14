@@ -8,7 +8,7 @@ export const achievementLists = [
   {
     id: 2,
     count: "500",
-    subTitle: "Students",
+    subTitle: "Enrolled Students",
     titleColor: "text-[#01A9DC]",
   },
   {

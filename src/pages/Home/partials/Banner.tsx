@@ -14,7 +14,7 @@ const Banner = () => {
   const { Banner1, Banner2, Banner3 } = HomeImages;
   const banners = [Banner1, Banner2, Banner3];
   return (
-    <>
+    <section className="w-full">
       <Swiper
         spaceBetween={30}
         grabCursor={true}
@@ -41,7 +41,7 @@ const Banner = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </section>
   );
 };
 export default Banner;

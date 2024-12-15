@@ -5,7 +5,10 @@ import { HomeImages } from "../../../utils/images";
 
 const About = () => {
   return (
-    <Layout className="flex flex-wrap items-center" id="about">
+    <Layout
+      className="container mx-auto flex flex-wrap items-center"
+      id="about"
+    >
       <div className="basis-full md:basis-1/2 md:pr-24">
         <h1 className="text-xl md:text-3xl">
           With{" "}

@@ -15,7 +15,7 @@ const Navbar = () => {
   window.addEventListener("scroll", navBgHandler);
   return (
     <nav
-      className={`w-screen h-16 md:h-20 flex justify-between items-center z-50 fixed top-0 px-5 md:px-28 py-5 ${
+      className={`w-full h-16 md:h-20 flex justify-between items-center z-50 fixed top-0 px-5 md:px-28 py-5 ${
         navBg && "bg-white"
       } bg-brand md:bg-transparent transition-all duration-500`}
     >

@@ -15,6 +15,9 @@
 }
 
 @layer utilities {
+  .custom-container {
+    @apply container px-10 mx-auto;
+  }
 }
 
 @layer components {

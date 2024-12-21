@@ -1,15 +1,12 @@
-import { TypeAnimation } from "react-type-animation";
+// import { TypeAnimation } from "react-type-animation";
 
 import Layout from "../../../components/Layout";
 import { HomeImages } from "../../../utils/images";
 
 const About = () => {
   return (
-    <Layout
-      className="container mx-auto flex flex-wrap items-center"
-      id="about"
-    >
-      <div className="basis-full md:basis-1/2 md:pr-24">
+    <Layout className="custom-container flex flex-wrap items-center" id="about">
+      <div className="basis-full md:basis-1/2 md:pr-10 lg:pr-24">
         <h1 className="text-xl md:text-3xl">
           With{" "}
           <span className="text-2xl md:text-6xl text-brand tracking-wide italic">
@@ -17,10 +14,12 @@ const About = () => {
           </span>{" "}
           <br /> Become the Next
         </h1>
-        <div className="text-brand mt-2 mb-5 font-kalam">
-          <TypeAnimation
+        <h1 className="text-brand my-5 font-kalam text-4xl md:text-5xl">
+          Software Developer
+        </h1>
+        {/* <div className="text-brand mt-2 mb-5 font-kalam"> */}
+        {/* <TypeAnimation
             sequence={[
-              // Same substring at the start will only be typed once, initially
               "Developer",
               1000,
               "Freelancer",
@@ -33,8 +32,9 @@ const About = () => {
             speed={50}
             className="text-4xl md:text-5xl"
             repeat={Infinity}
-          />
-        </div>
+          /> */}
+
+        {/* </div> */}
         <p className="text-sm leading-6 text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
           reiciendis quas delectus doloremque a nam non laudantium hic dolor

@@ -21,6 +21,16 @@ export const menuItems = [
   },
   {
     id: 5,
+    title: "Features",
+    path: "#features",
+  },
+  {
+    id: 6,
+    title: "Testimonials",
+    path: "#testimonials",
+  },
+  {
+    id: 7,
     title: "Contact",
     path: "#contact",
   },

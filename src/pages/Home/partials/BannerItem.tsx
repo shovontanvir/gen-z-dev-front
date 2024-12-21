@@ -6,7 +6,7 @@ const BannerItem = ({ image }: { image: string }) => {
         alt="home banner"
         className="absolute inset-0 w-full h-full"
       />
-      <div className="relative text-white z-50 w-[50vw] h-[30vh] md:h-[50vh] flex items-center">
+      <div className="relative text-white z-50 w-[50vw] h-[30vh] sm:h-[50vh] flex items-center">
         <div>
           <h1 className="text-xl md:text-6xl tracking-wider font-kalam">
             Begin Your <br /> Journey with

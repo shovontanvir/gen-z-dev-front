@@ -11,8 +11,9 @@ import BannerItem from "./BannerItem";
 import { HomeImages } from "../../../utils/images";
 
 const Banner = () => {
-  const { Banner1, Banner2, Banner3 } = HomeImages;
-  const banners = [Banner1, Banner2, Banner3];
+  const { Banner2 } = HomeImages; // without slider effect
+  // const { Banner1, Banner2, Banner3 } = HomeImages; // with slider effect
+  const banners = [Banner2];
   return (
     <section className="w-full">
       <Swiper
@@ -29,7 +30,7 @@ const Banner = () => {
           },
         }}
         modules={[EffectCreative, Autoplay]}
-        className="mySwiper h-[40vh] md:h-[70vh] bg-black"
+        className="mySwiper h-[40vh] sm:h-[70vh] bg-black"
         autoplay={{
           delay: 2500,
         }}
